@@ -10,10 +10,14 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 * To create an R script called run_analysis.R that does the following:
 
 step 1. Merges the training and the test sets to create one data set.
+
 step 2. Extracts only the measurements on the mean and standard deviation for
 	each measurement.
+	
 step 3. Uses descriptive activity names to name the activities in the data set
+
 step 4. Appropriately labels the data set with descriptive variable names.
+
 step 5. From the data set in step 4, creates a second, independent tidy data set
 	with the average of each variable for each activity and each subject.
 
@@ -34,6 +38,7 @@ The run_analysis.R script downloads the data file with the information and
 measurements, stores it in the user's working directory (filename file.zip) 
 and creates two files from its content: fulldata_onlymean_std.csv and
 data_summarized.csv.
+
 The first of those two files contain only the means and standard deviations
 of each measurement (see below for list of measurements).
 data_summarized.csv contains a summary where averages were taken to make
@@ -63,7 +68,9 @@ How to use
 =======
 Downloading run_analysis.R to a directory and, in that directory, issuing the
 following command on a command line prompt should work:
+
 	Rscript run_analysis.R
+	
 However, I do not recommend actually using it. It is customised for this dataset
 alone, and the code was written for an assignment, so its purpose probably
 should be to serve as a reference for people learning their way around data
